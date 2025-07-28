@@ -8,7 +8,7 @@
 - **Взаємодія зі станом:** Замість локального стану та пропсів використовуються селектори та дії Redux для читання та зміни стану.
 - **Оптимізація:** Селектори використовуються для ефективного доступу до стану.
 
-Демо додатку розгорнуто на платформі **Vercel**: [https://hw39react-06072025.vercel.app/](https://hw39react-06072025.vercel.app/)
+Демо додатку розгорнуто на платформі **Vercel**: [https://hw45react-28072025.vercel.app/](https://hw45react-28072025.vercel.app/)
 
 ---
 
@@ -41,7 +41,7 @@ hw8-redux-app/
 
 1. **Клонувати репозиторій:**
     ```bash
-    git clone https://github.com/Oleksandr-VFU/hw39react-06072025.git
+    git clone https://github.com/Oleksandr-VFU/hw45react-28072025.git
     cd hw8-redux-app
     ```
 
