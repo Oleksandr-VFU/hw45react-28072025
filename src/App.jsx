@@ -1,12 +1,12 @@
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import CounterManager from './components/CounterManager';
+import CounterManager from './components/CounterManager.tsx';
 import './App.css'
 
 function App() {
   return (
     <Provider store={store}>
-      <h1>Лічильник що побудований на Stateful та Stateless компонентах</h1>
+      <h1>Інтеграція Redux у існуючий React проект "Лічильник"</h1>
       <CounterManager />
     </Provider>
   )
