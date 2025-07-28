@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import {useDispatch} from 'react-redux';
+import { increment, decrement, reset } from "../redux/actions";
 import CounterDisplay from "./CounterDisplay";
 
 const CounterManager = () => {
-    const [count, setCount] = useState(0);
+    const dispatch = useDispatch()
 
     return (
         <>
-            <CounterDisplay value={count} />
+            <CounterDisplay />
             <div className="managment-panel">
-                <button onClick={() => setCount(count + 1)}>Збільшити Значення</button>
-                <button onClick={() => setCount(count -1)}>Зменшити Значення</button>
-                <button onClick={() => setCount(0)}>Скинути Значення</button> 
+                <button onClick={() => dispatch(increment())}>Збільшити Значення</button>
+                <button onClick={() => dispatch(decrement())}>Зменшити Значення</button>
+                <button onClick={() => dispatch(reset())}>Скинути Значення</button> 
             </div> 
         </>
     );
