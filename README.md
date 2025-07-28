@@ -1,12 +1,64 @@
-# React + Vite
+## Опис проекту
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Це навчальний React проект "Лічильник" з інтеграцією Redux, створений за допомогою Vite. Мета проекту — продемонструвати централізоване управління станом за допомогою Redux Toolkit:
 
-Currently, two official plugins are available:
+- **Централізований стан:** Управління лічильником перенесено з локального стану компонентів до Redux store.
+- **Redux Toolkit:** Каркас стору створено у директорії `src/redux` з використанням Redux Toolkit.
+- **Підключення Redux:** Store підключено до додатку через компонент `Provider` з бібліотеки React Redux.
+- **Взаємодія зі станом:** Замість локального стану та пропсів використовуються селектори та дії Redux для читання та зміни стану.
+- **Оптимізація:** Селектори використовуються для ефективного доступу до стану.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Демо додатку розгорнуто на платформі **Vercel**: [https://hw39react-06072025.vercel.app/](https://hw39react-06072025.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Структура проекту
+
+```
+hw8-redux-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── CounterManager.tsx
+│   │   └── CounterDisplay.tsx
+│   ├── redux/
+|   |   |── actions.ts
+|   |   |── actionTypes.ts
+│   │   ├── reducer.ts
+│   │   └── store.ts
+│   ├── App.jsx
+│   ├── main.jsx
+|   |── index.css
+│   └── types.ts
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## Локальний запуск
+
+1. **Клонувати репозиторій:**
+    ```bash
+    git clone https://github.com/Oleksandr-VFU/hw39react-06072025.git
+    cd hw8-redux-app
+    ```
+
+2. **Встановити залежності:**
+    ```bash
+    npm install
+    ```
+
+3. **Запустити проект:**
+    ```bash
+    npm run dev
+    ```
+
+4. Відкрити [http://localhost:5173](http://localhost:5173) у браузері.
+
+---
+
+## Ліцензія
+
+Освітній проект. Всі права захищено.
